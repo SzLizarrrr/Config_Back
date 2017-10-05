@@ -1,0 +1,15 @@
+version: '3'
+services: 
+  rabbit: 
+    image: rabbitmq:3-management
+    ports:
+      - '5672:5672'
+      - '15672:15672'
+    environment:
+      RABBITMQ_DEFAULT_PASS: 123456
+      RABBITMQ_DEFAULT_USER: springcloud
+    volumes:
+      - $PWD/data:/var/lib/rabbitmq
+    user: '1000:50'
+
+
