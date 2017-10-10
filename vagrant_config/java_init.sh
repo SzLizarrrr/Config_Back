@@ -32,8 +32,9 @@ echo "########### maven 3.5 install #############"
 tar xzf apache-maven-3.5.0-bin.tar.gz
 ln -s apache-maven-3.5.0  maven
 
-echo "########### jdk and maven clean up ############"
-rm -f /opt/apache-maven-3.5.0-bin.tar.gz /opt/jdk-8u144-linux-x64.tar.gz
+echo "########### maven 3.5 env #############"
+# echo "export M2_HOME=/opt/maven" >> /etc/profile.d/maven.sh
+# echo "export PATH=${M2_HOME}/bin:${PATH}" >> /etc/profile.d/maven.sh
 
-echo "########### add path ###########"
+rm -f /opt/apache-maven-3.5.0-bin.tar.gz /opt/jdk-8u144-linux-x64.tar.gz
 cp /vagrant/maven.sh /etc/profile.d/
