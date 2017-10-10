@@ -10,3 +10,5 @@ command -v git >/dev/null 2>&1 || { echo >&2 "########## Git Install ##########"
 
 command -v wget >/dev/null 2>&1 || { echo >&2 "########## Wget Install ##########"; sudo yum install -y wget; }
 
+sudo python /vagrant/get-pip.py
+sudo pip install -U mycli
