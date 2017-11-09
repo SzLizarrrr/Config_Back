@@ -1,0 +1,14 @@
+#!/bin/bash
+
+command -v vim >/dev/null 2>&1 || { echo >&2 "########## Vim Install ##########"; sudo apt-get install -y vim; }
+
+command -v tree >/dev/null 2>&1 || { echo >&2 "########## Tree Install ##########"; sudo apt-get install -y tree; }
+
+command -v telnet >/dev/null 2>&1 || { echo >&2 "########## Telnet Install ##########"; sudo apt-get install -y telnet; }
+
+command -v git >/dev/null 2>&1 || { echo >&2 "########## Git Install ##########"; sudo apt-get install -y git; }
+
+command -v wget >/dev/null 2>&1 || { echo >&2 "########## Wget Install ##########"; sudo apt-get install -y wget; }
+
+sudo python /vagrant/get-pip.py
+sudo pip install -U mycli
