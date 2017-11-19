@@ -1,0 +1,5 @@
+alias github="cd ~/vagrant_vm/data/github/"
+ZSH_THEME="spaceship"
+# alias vi="mvim"
+# alias setJdk8="export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)"
+# alias setJdk9="export JAVA_HOME=$(/usr/libexec/java_home -v 9)"

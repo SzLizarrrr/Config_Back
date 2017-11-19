@@ -1,0 +1,7 @@
+noremap Y Y
+set nonu
+set mouse=r
+set nospell
+set wrap
+color ir_black
+" color jellybeans
